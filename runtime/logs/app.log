@@ -1,0 +1,2994 @@
+2017-06-22 23:39:20 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'yii\web\Request::cookieValidationKey must be configured with a secret key.' in D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\web\Request.php:1292
+Stack trace:
+#0 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\web\Request.php(1274): yii\web\Request->loadCookies()
+#1 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\web\Request.php(1355): yii\web\Request->getCookies()
+#2 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\web\Request.php(1338): yii\web\Request->loadCsrfToken()
+#3 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\helpers\BaseHtml.php(302): yii\web\Request->getCsrfToken()
+#4 D:\OpenServer\domains\im-yii\views\layouts\main.php(21): yii\helpers\BaseHtml::csrfMetaTags()
+#5 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\base\View.php(330): require('D:\\OpenServer\\d...')
+#6 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#7 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\SiteController))
+#8 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<div class="sit...')
+#9 D:\OpenServer\domains\im-yii\controllers\SiteController.php(64): yii\base\Controller->render('index')
+#10 [internal function]: app\controllers\SiteController->actionIndex()
+#11 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#14 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#15 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 D:\OpenServer\domains\im-yii\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2017-06-22 23:39:20 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '98c251eb650a5ecc32f242a9d2d872c66acd25322a889268190a238d3c06a48ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"o•.à„2»7\"–§∫~¢÷wíB∂ª\'ˇ:fVnM\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'im-yii'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://im-yii/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=98c251eb650a5ecc32f242a9d2d872c66acd25322a889268190a238d3c06a48ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22o%A5%16.%88%E32%C87%22%0E%D0%A4%BA%7E%A2%D6w%92%19B%B6%BB%17%27%FF%3AfVn%13M%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\modules\\http\\Apache-2.4+Nginx-1.10\\bin;d:\\openserver\\modules\\http\\Apache-2.4+Nginx-1.10;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'im-yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/im-yii'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/im-yii'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/im-yii/web/index.php'
+    'REMOTE_PORT' => '6011'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498163960.387
+    'REQUEST_TIME' => 1498163960
+    'argv' => []
+    'argc' => 0
+]
+2017-06-22 23:39:20 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'yii\web\Request::cookieValidationKey must be configured with a secret key.' 
+
+in D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\web\Request.php:1292
+
+Stack trace:
+#0 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\web\Request.php(1274): yii\web\Request->loadCookies()
+#1 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\web\User.php(555): yii\web\Request->getCookies()
+#2 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\web\User.php(287): yii\web\User->getIdentityAndDurationFromCookie()
+#3 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\web\User.php(674): yii\web\User->loginByCookie()
+#4 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\web\User.php(188): yii\web\User->renewAuthStatus()
+#5 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\base\Component.php(132): yii\web\User->getIdentity()
+#6 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2-debug\panels\UserPanel.php(54): yii\base\Component->__get('identity')
+#7 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2-debug\LogTarget.php(54): yii\debug\panels\UserPanel->save()
+#8 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#9 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#10 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#11 D:\OpenServer\domains\im-yii\vendor\yiisoft\yii2\base\ErrorHandler.php(113): yii\log\Logger->flush(true)
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidConfigException))
+#13 {main}
+2017-06-22 23:39:20 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '98c251eb650a5ecc32f242a9d2d872c66acd25322a889268190a238d3c06a48ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"o•.à„2»7\"–§∫~¢÷wíB∂ª\'ˇ:fVnM\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'im-yii'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://im-yii/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=98c251eb650a5ecc32f242a9d2d872c66acd25322a889268190a238d3c06a48ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22o%A5%16.%88%E32%C87%22%0E%D0%A4%BA%7E%A2%D6w%92%19B%B6%BB%17%27%FF%3AfVn%13M%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\modules\\http\\Apache-2.4+Nginx-1.10\\bin;d:\\openserver\\modules\\http\\Apache-2.4+Nginx-1.10;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'im-yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/im-yii'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/im-yii'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/im-yii/web/index.php'
+    'REMOTE_PORT' => '6011'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498163960.387
+    'REQUEST_TIME' => 1498163960
+    'argv' => []
+    'argc' => 0
+]
+2018-10-02 04:10:31 [127.0.0.1][-][i48ec4fa2l7al2gaorsd8c66o2][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required. in /var/www/html/cms/vendor/yiisoft/yii2/captcha/Captcha.php:179
+Stack trace:
+#0 /var/www/html/cms/vendor/yiisoft/yii2/captcha/Captcha.php(94): yii\captcha\Captcha::checkRequirements()
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/cms/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 /var/www/html/cms/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 /var/www/html/cms/vendor/yiisoft/yii2/base/Widget.php(136): yii\BaseYii::createObject(Array)
+#7 /var/www/html/cms/vendor/yiisoft/yii2/widgets/ActiveField.php(725): yii\base\Widget::widget(Array)
+#8 /var/www/html/cms/views/site/contact.php(55): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#10 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\SiteController))
+#12 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /var/www/html/cms/controllers/SiteController.php(114): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('contact', Array)
+#18 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#19 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /var/www/html/index.php(12): yii\base\Application->run()
+#21 {main}
+2018-10-02 04:10:31 [127.0.0.1][-][i48ec4fa2l7al2gaorsd8c66o2][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i48ec4fa2l7al2gaorsd8c66o2'
+    '_csrf' => '3e9cf0ef08e4f35dfc7e9b45eea30b03c7636e6c0b773ea172a6e3fece95c90da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\0–^r⁄4í0ÛC(ÂAM}˚°ıtŸõƒﬂQ/\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=page%2Fnews'
+    'HTTP_COOKIE' => 'PHPSESSID=i48ec4fa2l7al2gaorsd8c66o2; _csrf=3e9cf0ef08e4f35dfc7e9b45eea30b03c7636e6c0b773ea172a6e3fece95c90da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%00%08%01%D0%0F%5E%0Br%03%DA4%92%130%F3C%28%E5AM%7D%FB%A1%F5t%D9%9B%C4%1D%DFQ%2F%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '36560'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538453431.12
+    'REQUEST_TIME' => 1538453431
+]
+2018-10-02 04:22:40 [127.0.0.1][-][i48ec4fa2l7al2gaorsd8c66o2][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required. in /var/www/html/cms/vendor/yiisoft/yii2/captcha/Captcha.php:179
+Stack trace:
+#0 /var/www/html/cms/vendor/yiisoft/yii2/captcha/Captcha.php(94): yii\captcha\Captcha::checkRequirements()
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/cms/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 /var/www/html/cms/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 /var/www/html/cms/vendor/yiisoft/yii2/base/Widget.php(136): yii\BaseYii::createObject(Array)
+#7 /var/www/html/cms/vendor/yiisoft/yii2/widgets/ActiveField.php(725): yii\base\Widget::widget(Array)
+#8 /var/www/html/cms/views/site/contact.php(55): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#10 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\SiteController))
+#12 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /var/www/html/cms/controllers/SiteController.php(114): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('contact', Array)
+#18 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#19 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /var/www/html/index.php(12): yii\base\Application->run()
+#21 {main}
+2018-10-02 04:22:40 [127.0.0.1][-][i48ec4fa2l7al2gaorsd8c66o2][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i48ec4fa2l7al2gaorsd8c66o2'
+    '_csrf' => '3e9cf0ef08e4f35dfc7e9b45eea30b03c7636e6c0b773ea172a6e3fece95c90da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\0–^r⁄4í0ÛC(ÂAM}˚°ıtŸõƒﬂQ/\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=page%2Fnews'
+    'HTTP_COOKIE' => 'PHPSESSID=i48ec4fa2l7al2gaorsd8c66o2; _csrf=3e9cf0ef08e4f35dfc7e9b45eea30b03c7636e6c0b773ea172a6e3fece95c90da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%00%08%01%D0%0F%5E%0Br%03%DA4%92%130%F3C%28%E5AM%7D%FB%A1%F5t%D9%9B%C4%1D%DFQ%2F%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '36606'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538454160.586
+    'REQUEST_TIME' => 1538454160
+]
+2018-10-02 04:27:17 [127.0.0.1][-][i48ec4fa2l7al2gaorsd8c66o2][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required. in /var/www/html/cms/vendor/yiisoft/yii2/captcha/Captcha.php:179
+Stack trace:
+#0 /var/www/html/cms/vendor/yiisoft/yii2/captcha/Captcha.php(94): yii\captcha\Captcha::checkRequirements()
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/cms/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 /var/www/html/cms/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 /var/www/html/cms/vendor/yiisoft/yii2/base/Widget.php(136): yii\BaseYii::createObject(Array)
+#7 /var/www/html/cms/vendor/yiisoft/yii2/widgets/ActiveField.php(725): yii\base\Widget::widget(Array)
+#8 /var/www/html/cms/views/site/contact.php(55): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#10 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\SiteController))
+#12 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /var/www/html/cms/controllers/SiteController.php(114): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('contact', Array)
+#18 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#19 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /var/www/html/index.php(12): yii\base\Application->run()
+#21 {main}
+2018-10-02 04:27:17 [127.0.0.1][-][i48ec4fa2l7al2gaorsd8c66o2][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i48ec4fa2l7al2gaorsd8c66o2'
+    '_csrf' => '3e9cf0ef08e4f35dfc7e9b45eea30b03c7636e6c0b773ea172a6e3fece95c90da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\0–^r⁄4í0ÛC(ÂAM}˚°ıtŸõƒﬂQ/\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=page%2Fnews'
+    'HTTP_COOKIE' => 'PHPSESSID=i48ec4fa2l7al2gaorsd8c66o2; _csrf=3e9cf0ef08e4f35dfc7e9b45eea30b03c7636e6c0b773ea172a6e3fece95c90da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%00%08%01%D0%0F%5E%0Br%03%DA4%92%130%F3C%28%E5AM%7D%FB%A1%F5t%D9%9B%C4%1D%DFQ%2F%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '36620'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538454437.164
+    'REQUEST_TIME' => 1538454437
+]
+2018-10-02 04:28:06 [127.0.0.1][-][i48ec4fa2l7al2gaorsd8c66o2][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required. in /var/www/html/cms/vendor/yiisoft/yii2/captcha/Captcha.php:179
+Stack trace:
+#0 /var/www/html/cms/vendor/yiisoft/yii2/captcha/Captcha.php(94): yii\captcha\Captcha::checkRequirements()
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/cms/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 /var/www/html/cms/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 /var/www/html/cms/vendor/yiisoft/yii2/base/Widget.php(136): yii\BaseYii::createObject(Array)
+#7 /var/www/html/cms/vendor/yiisoft/yii2/widgets/ActiveField.php(725): yii\base\Widget::widget(Array)
+#8 /var/www/html/cms/views/site/contact.php(55): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#10 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\SiteController))
+#12 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /var/www/html/cms/controllers/SiteController.php(114): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('contact', Array)
+#18 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#19 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /var/www/html/index.php(12): yii\base\Application->run()
+#21 {main}
+2018-10-02 04:28:06 [127.0.0.1][-][i48ec4fa2l7al2gaorsd8c66o2][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i48ec4fa2l7al2gaorsd8c66o2'
+    '_csrf' => '3e9cf0ef08e4f35dfc7e9b45eea30b03c7636e6c0b773ea172a6e3fece95c90da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\0–^r⁄4í0ÛC(ÂAM}˚°ıtŸõƒﬂQ/\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=page%2Fnews'
+    'HTTP_COOKIE' => 'PHPSESSID=i48ec4fa2l7al2gaorsd8c66o2; _csrf=3e9cf0ef08e4f35dfc7e9b45eea30b03c7636e6c0b773ea172a6e3fece95c90da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%00%08%01%D0%0F%5E%0Br%03%DA4%92%130%F3C%28%E5AM%7D%FB%A1%F5t%D9%9B%C4%1D%DFQ%2F%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '36632'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538454486.364
+    'REQUEST_TIME' => 1538454486
+]
+2018-10-02 05:29:37 [176.16.11.178][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 176.16.11.178
+    in /var/www/html/cms/views/layouts/main.php:426
+    in /var/www/html/cms/controllers/SiteController.php:65
+2018-10-02 05:29:37 [176.16.11.178][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 176.16.11.178
+2018-10-02 05:29:37 [176.16.11.178][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => '176.16.11.102'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at 176.16.11.102 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => '176.16.11.102'
+    'SERVER_ADDR' => '176.16.11.102'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '176.16.11.178'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '15778'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538458177.77
+    'REQUEST_TIME' => 1538458177
+]
+2018-10-02 05:29:42 [176.16.11.178][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 176.16.11.178
+    in /var/www/html/cms/views/layouts/default.php:261
+    in /var/www/html/cms/controllers/PageController.php:22
+2018-10-02 05:29:42 [176.16.11.178][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 176.16.11.178
+2018-10-02 05:29:42 [176.16.11.178][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '40d7d54c3a9383b7dbec8d897040e899f866efa20ba0895232957d335c3a9c75a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Íhpˇe3=Ç1+J&4ÚÜÒˇ\"E/˛@}˛\\‘\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '176.16.11.102'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://176.16.11.102/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=40d7d54c3a9383b7dbec8d897040e899f866efa20ba0895232957d335c3a9c75a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%EAhp%FFe3%3D%821%1A%11%2BJ%14%264%F2%0E%86%F1%FF%22%07E%1D%2F%FE%40%7D%FE%5C%D4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at 176.16.11.102 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => '176.16.11.102'
+    'SERVER_ADDR' => '176.16.11.102'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '176.16.11.178'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '15779'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538458182.395
+    'REQUEST_TIME' => 1538458182
+]
+2018-10-02 05:29:43 [176.16.11.178][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 176.16.11.178
+    in /var/www/html/cms/views/layouts/default.php:261
+    in /var/www/html/cms/controllers/PageController.php:27
+2018-10-02 05:29:43 [176.16.11.178][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 176.16.11.178
+2018-10-02 05:29:43 [176.16.11.178][-][-][info][application] $_GET = [
+    'r' => 'page/news'
+]
+
+$_COOKIE = [
+    '_csrf' => '40d7d54c3a9383b7dbec8d897040e899f866efa20ba0895232957d335c3a9c75a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Íhpˇe3=Ç1+J&4ÚÜÒˇ\"E/˛@}˛\\‘\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '176.16.11.102'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://176.16.11.102/index.php?r=page%2Flistproducts'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=40d7d54c3a9383b7dbec8d897040e899f866efa20ba0895232957d335c3a9c75a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%EAhp%FFe3%3D%821%1A%11%2BJ%14%264%F2%0E%86%F1%FF%22%07E%1D%2F%FE%40%7D%FE%5C%D4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at 176.16.11.102 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => '176.16.11.102'
+    'SERVER_ADDR' => '176.16.11.102'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '176.16.11.178'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '15779'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Fnews'
+    'REQUEST_URI' => '/index.php?r=page%2Fnews'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538458183.646
+    'REQUEST_TIME' => 1538458183
+]
+2018-10-02 05:29:44 [176.16.11.178][-][uevdu0hevvq55plq9gd2pghi16][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required. in /var/www/html/cms/vendor/yiisoft/yii2/captcha/Captcha.php:179
+Stack trace:
+#0 /var/www/html/cms/vendor/yiisoft/yii2/captcha/Captcha.php(94): yii\captcha\Captcha::checkRequirements()
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/cms/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 /var/www/html/cms/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 /var/www/html/cms/vendor/yiisoft/yii2/base/Widget.php(136): yii\BaseYii::createObject(Array)
+#7 /var/www/html/cms/vendor/yiisoft/yii2/widgets/ActiveField.php(725): yii\base\Widget::widget(Array)
+#8 /var/www/html/cms/views/site/contact.php(55): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#10 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\SiteController))
+#12 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /var/www/html/cms/controllers/SiteController.php(114): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('contact', Array)
+#18 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#19 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /var/www/html/index.php(12): yii\base\Application->run()
+#21 {main}
+2018-10-02 05:29:44 [176.16.11.178][-][uevdu0hevvq55plq9gd2pghi16][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 176.16.11.178
+2018-10-02 05:29:44 [176.16.11.178][-][uevdu0hevvq55plq9gd2pghi16][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 176.16.11.178
+2018-10-02 05:29:44 [176.16.11.178][-][uevdu0hevvq55plq9gd2pghi16][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_csrf' => '40d7d54c3a9383b7dbec8d897040e899f866efa20ba0895232957d335c3a9c75a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Íhpˇe3=Ç1+J&4ÚÜÒˇ\"E/˛@}˛\\‘\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '176.16.11.102'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://176.16.11.102/index.php?r=page%2Fnews'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=40d7d54c3a9383b7dbec8d897040e899f866efa20ba0895232957d335c3a9c75a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%EAhp%FFe3%3D%821%1A%11%2BJ%14%264%F2%0E%86%F1%FF%22%07E%1D%2F%FE%40%7D%FE%5C%D4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at 176.16.11.102 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => '176.16.11.102'
+    'SERVER_ADDR' => '176.16.11.102'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '176.16.11.178'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '15779'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538458184.82
+    'REQUEST_TIME' => 1538458184
+]
+2018-10-02 06:15:16 [127.0.0.1][-][i48ec4fa2l7al2gaorsd8c66o2][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required. in /var/www/html/cms/vendor/yiisoft/yii2/captcha/Captcha.php:179
+Stack trace:
+#0 /var/www/html/cms/vendor/yiisoft/yii2/captcha/Captcha.php(94): yii\captcha\Captcha::checkRequirements()
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/cms/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 /var/www/html/cms/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 /var/www/html/cms/vendor/yiisoft/yii2/base/Widget.php(136): yii\BaseYii::createObject(Array)
+#7 /var/www/html/cms/vendor/yiisoft/yii2/widgets/ActiveField.php(725): yii\base\Widget::widget(Array)
+#8 /var/www/html/cms/views/site/contact.php(55): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#10 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\SiteController))
+#12 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /var/www/html/cms/controllers/SiteController.php(114): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('contact', Array)
+#18 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#19 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /var/www/html/index.php(12): yii\base\Application->run()
+#21 {main}
+2018-10-02 06:15:16 [127.0.0.1][-][i48ec4fa2l7al2gaorsd8c66o2][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i48ec4fa2l7al2gaorsd8c66o2'
+    '_csrf' => '3e9cf0ef08e4f35dfc7e9b45eea30b03c7636e6c0b773ea172a6e3fece95c90da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\0–^r⁄4í0ÛC(ÂAM}˚°ıtŸõƒﬂQ/\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=page%2Fnews'
+    'HTTP_COOKIE' => 'PHPSESSID=i48ec4fa2l7al2gaorsd8c66o2; _csrf=3e9cf0ef08e4f35dfc7e9b45eea30b03c7636e6c0b773ea172a6e3fece95c90da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%00%08%01%D0%0F%5E%0Br%03%DA4%92%130%F3C%28%E5AM%7D%FB%A1%F5t%D9%9B%C4%1D%DFQ%2F%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '36658'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538460916.41
+    'REQUEST_TIME' => 1538460916
+]
+2018-10-03 06:04:39 [127.0.0.1][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Cannot redeclare app\controllers\PageController::actionContacts() in /var/www/html/cms/controllers/PageController.php:40
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-10-03 06:04:39 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i48ec4fa2l7al2gaorsd8c66o2'
+    '_csrf' => '3e9cf0ef08e4f35dfc7e9b45eea30b03c7636e6c0b773ea172a6e3fece95c90da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\0–^r⁄4í0ÛC(ÂAM}˚°ıtŸõƒﬂQ/\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=i48ec4fa2l7al2gaorsd8c66o2; _csrf=3e9cf0ef08e4f35dfc7e9b45eea30b03c7636e6c0b773ea172a6e3fece95c90da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%00%08%01%D0%0F%5E%0Br%03%DA4%92%130%F3C%28%E5AM%7D%FB%A1%F5t%D9%9B%C4%1D%DFQ%2F%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '36816'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538546679.236
+    'REQUEST_TIME' => 1538546679
+]
+2018-10-03 06:05:02 [127.0.0.1][-][-][error][Error] Error: Class 'Url' not found in /var/www/html/cms/views/layouts/default.php:40
+Stack trace:
+#0 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require()
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('\n\n\n\n<div class=...')
+#4 /var/www/html/cms/controllers/PageController.php(22): yii\base\Controller->render('listproducts')
+#5 [internal function]: app\controllers\PageController->actionListproducts()
+#6 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/index.php(12): yii\base\Application->run()
+#12 {main}
+2018-10-03 06:05:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i48ec4fa2l7al2gaorsd8c66o2'
+    '_csrf' => '3e9cf0ef08e4f35dfc7e9b45eea30b03c7636e6c0b773ea172a6e3fece95c90da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\0–^r⁄4í0ÛC(ÂAM}˚°ıtŸõƒﬂQ/\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=i48ec4fa2l7al2gaorsd8c66o2; _csrf=3e9cf0ef08e4f35dfc7e9b45eea30b03c7636e6c0b773ea172a6e3fece95c90da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%00%08%01%D0%0F%5E%0Br%03%DA4%92%130%F3C%28%E5AM%7D%FB%A1%F5t%D9%9B%C4%1D%DFQ%2F%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '36826'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538546702.248
+    'REQUEST_TIME' => 1538546702
+]
+2018-10-05 01:37:42 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected 'class' (T_CLASS), expecting ',' or ';' in /var/www/html/cms/models/Categories.php:6
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\models\\Cate...')
+#1 /var/www/html/cms/controllers/PageController.php(21): spl_autoload_call('app\\models\\Cate...')
+#2 [internal function]: app\controllers\PageController->actionListproducts()
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#6 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/index.php(12): yii\base\Application->run()
+#9 {main}
+2018-10-05 01:37:42 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42624'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538703462.568
+    'REQUEST_TIME' => 1538703462
+]
+2018-10-05 05:06:44 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: img in /var/www/html/cms/views/page/listproducts.php:37
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(37): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/c...', 37, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(23): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-05 05:06:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42736'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538716004.921
+    'REQUEST_TIME' => 1538716004
+]
+2018-10-05 05:08:02 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: name in /var/www/html/cms/views/page/listproducts.php:39
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(39): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/c...', 39, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(23): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-05 05:08:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42738'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538716082.677
+    'REQUEST_TIME' => 1538716082
+]
+2018-10-05 05:08:44 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Use of undefined constant img - assumed 'img' in /var/www/html/cms/views/page/listproducts.php:37
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(37): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', '/var/www/html/c...', 37, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(23): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-05 05:08:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42770'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538716124.328
+    'REQUEST_TIME' => 1538716124
+]
+2018-10-05 05:09:01 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: img in /var/www/html/cms/views/page/listproducts.php:37
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(37): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/c...', 37, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(23): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-05 05:09:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42772'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538716141.612
+    'REQUEST_TIME' => 1538716141
+]
+2018-10-05 05:10:19 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: img in /var/www/html/cms/views/page/listproducts.php:37
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(37): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/c...', 37, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(23): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-05 05:10:19 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42774'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538716219.553
+    'REQUEST_TIME' => 1538716219
+]
+2018-10-05 05:10:21 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: img in /var/www/html/cms/views/page/listproducts.php:37
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(37): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/c...', 37, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(23): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-05 05:10:21 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42776'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538716221.203
+    'REQUEST_TIME' => 1538716221
+]
+2018-10-05 05:10:22 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: img in /var/www/html/cms/views/page/listproducts.php:37
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(37): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/c...', 37, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(23): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-05 05:10:22 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42778'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538716222.355
+    'REQUEST_TIME' => 1538716222
+]
+2018-10-05 05:11:34 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: img in /var/www/html/cms/views/page/listproducts.php:37
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(37): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/c...', 37, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(23): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-05 05:11:34 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42784'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538716294.019
+    'REQUEST_TIME' => 1538716294
+]
+2018-10-05 05:11:35 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: img in /var/www/html/cms/views/page/listproducts.php:37
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(37): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/c...', 37, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(23): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-05 05:11:35 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42786'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538716295.595
+    'REQUEST_TIME' => 1538716295
+]
+2018-10-05 05:11:36 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: img in /var/www/html/cms/views/page/listproducts.php:37
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(37): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/c...', 37, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(23): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-05 05:11:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42788'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538716296.788
+    'REQUEST_TIME' => 1538716296
+]
+2018-10-05 05:11:53 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: img in /var/www/html/cms/views/page/listproducts.php:37
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(37): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/c...', 37, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(23): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-05 05:11:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42790'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538716313.923
+    'REQUEST_TIME' => 1538716313
+]
+2018-10-05 05:12:39 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: name in /var/www/html/cms/views/page/listproducts.php:39
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(39): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/c...', 39, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(23): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-05 05:12:39 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42792'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538716359.538
+    'REQUEST_TIME' => 1538716359
+]
+2018-10-05 05:14:04 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: name in /var/www/html/cms/views/page/listproducts.php:39
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(39): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/c...', 39, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(23): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-05 05:14:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42794'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538716444.31
+    'REQUEST_TIME' => 1538716444
+]
+2018-10-05 05:16:57 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: img in /var/www/html/cms/views/page/listproducts.php:35
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(35): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/c...', 35, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(23): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-05 05:16:57 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42796'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538716617.397
+    'REQUEST_TIME' => 1538716617
+]
+2018-10-05 05:17:07 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Array to string conversion in /var/www/html/cms/views/page/listproducts.php:35
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(35): yii\base\ErrorHandler->handleError(8, 'Array to string...', '/var/www/html/c...', 35, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(23): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-05 05:17:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42798'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538716627.92
+    'REQUEST_TIME' => 1538716627
+]
+2018-10-05 05:17:27 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Use of undefined constant img - assumed 'img' in /var/www/html/cms/views/page/listproducts.php:35
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(35): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', '/var/www/html/c...', 35, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(23): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-05 05:17:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42800'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538716647.089
+    'REQUEST_TIME' => 1538716647
+]
+2018-10-05 05:17:37 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: img in /var/www/html/cms/views/page/listproducts.php:35
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(35): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/c...', 35, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(23): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-05 05:17:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42802'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538716657.606
+    'REQUEST_TIME' => 1538716657
+]
+2018-10-05 05:19:44 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Use of undefined constant s - assumed 's' in /var/www/html/cms/views/page/listproducts.php:39
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(39): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', '/var/www/html/c...', 39, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(23): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-05 05:19:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42804'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538716784.495
+    'REQUEST_TIME' => 1538716784
+]
+2018-10-06 05:30:48 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '!' in /var/www/html/cms/views/page/listproducts.php:94
+Stack trace:
+#0 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#3 /var/www/html/cms/controllers/PageController.php(27): yii\base\Controller->render('listproducts', Array)
+#4 [internal function]: app\controllers\PageController->actionListproducts()
+#5 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-06 05:30:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=page%2Fcatalog'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '43236'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts&id=1'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538803848.239
+    'REQUEST_TIME' => 1538803848
+]
+2018-10-06 05:31:25 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '!' in /var/www/html/cms/views/page/listproducts.php:94
+Stack trace:
+#0 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#3 /var/www/html/cms/controllers/PageController.php(27): yii\base\Controller->render('listproducts', Array)
+#4 [internal function]: app\controllers\PageController->actionListproducts()
+#5 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-06 05:31:25 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=page%2Fcatalog'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '43240'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts&id=1'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538803885.517
+    'REQUEST_TIME' => 1538803885
+]
+2018-10-06 05:31:49 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '!' in /var/www/html/cms/views/page/listproducts.php:94
+Stack trace:
+#0 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#3 /var/www/html/cms/controllers/PageController.php(27): yii\base\Controller->render('listproducts', Array)
+#4 [internal function]: app\controllers\PageController->actionListproducts()
+#5 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-06 05:31:49 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=page%2Fcatalog'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '43244'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts&id=1'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538803909.84
+    'REQUEST_TIME' => 1538803909
+]
+2018-10-06 05:32:24 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '/' in /var/www/html/cms/views/page/listproducts.php:95
+Stack trace:
+#0 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#3 /var/www/html/cms/controllers/PageController.php(27): yii\base\Controller->render('listproducts', Array)
+#4 [internal function]: app\controllers\PageController->actionListproducts()
+#5 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-06 05:32:24 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=page%2Fcatalog'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '43248'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts&id=1'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538803944.522
+    'REQUEST_TIME' => 1538803944
+]
+2018-10-06 05:34:24 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected ';' in /var/www/html/cms/views/page/listproducts.php:95
+Stack trace:
+#0 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#3 /var/www/html/cms/controllers/PageController.php(27): yii\base\Controller->render('listproducts', Array)
+#4 [internal function]: app\controllers\PageController->actionListproducts()
+#5 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-06 05:34:24 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=page%2Fcatalog'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '43266'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts&id=1'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538804064.653
+    'REQUEST_TIME' => 1538804064
+]
+2018-10-06 06:03:34 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: count_products in /var/www/html/cms/controllers/PageController.php:27
+Stack trace:
+#0 /var/www/html/cms/controllers/PageController.php(27): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/c...', 27, Array)
+#1 [internal function]: app\controllers\PageController->actionListproducts()
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#5 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#6 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-10-06 06:03:34 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+    'id' => '5'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '43322'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts&id=5'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts&id=5'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538805814.796
+    'REQUEST_TIME' => 1538805814
+]
+2018-10-06 06:04:01 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: count_products in /var/www/html/cms/controllers/PageController.php:27
+Stack trace:
+#0 /var/www/html/cms/controllers/PageController.php(27): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/c...', 27, Array)
+#1 [internal function]: app\controllers\PageController->actionListproducts()
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#5 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#6 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-10-06 06:04:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+    'id' => '5'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '43326'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts&id=5'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts&id=5'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538805841.642
+    'REQUEST_TIME' => 1538805841
+]
+2018-10-06 06:04:44 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: count_products in /var/www/html/cms/controllers/PageController.php:27
+Stack trace:
+#0 /var/www/html/cms/controllers/PageController.php(27): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/c...', 27, Array)
+#1 [internal function]: app\controllers\PageController->actionListproducts()
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#5 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#6 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-10-06 06:04:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+    'id' => '5'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '43328'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts&id=5'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts&id=5'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538805884.159
+    'REQUEST_TIME' => 1538805884
+]
+2018-10-06 06:48:26 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "page%2product". in /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page%2product', Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-10-06 06:48:26 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page%2product'
+    'id' => '3'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '43676'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2product&id=3'
+    'REQUEST_URI' => '/index.php?r=page%2product&id=3'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538808506.566
+    'REQUEST_TIME' => 1538808506
+]
+2018-10-06 07:03:16 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '??' (T_COALESCE) in /var/www/html/cms/views/page/listproducts.php:112
+Stack trace:
+#0 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#3 /var/www/html/cms/controllers/PageController.php(29): yii\base\Controller->render('listproducts', Array)
+#4 [internal function]: app\controllers\PageController->actionListproducts()
+#5 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-06 07:03:16 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=page%2Fcatalog'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '43694'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts&id=1'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538809396.532
+    'REQUEST_TIME' => 1538809396
+]
+2018-10-06 07:03:32 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Use of undefined constant view - assumed 'view' in /var/www/html/cms/views/page/listproducts.php:83
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(83): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', '/var/www/html/c...', 83, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(29): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-06 07:03:32 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=page%2Fcatalog'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '43702'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts&id=1'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538809412.54
+    'REQUEST_TIME' => 1538809412
+]
+2018-10-06 07:04:01 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: view in /var/www/html/cms/views/page/listproducts.php:92
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(92): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/c...', 92, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(29): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-06 07:04:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=page%2Fcatalog'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '43708'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts&id=1'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538809441.128
+    'REQUEST_TIME' => 1538809441
+]
+2018-10-06 07:04:26 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: view in /var/www/html/cms/views/page/listproducts.php:92
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(92): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/c...', 92, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(29): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-06 07:04:26 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=page%2Fcatalog'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '43710'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts&id=1'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538809466.58
+    'REQUEST_TIME' => 1538809466
+]
+2018-10-06 07:07:17 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected 'else' (T_ELSE) in /var/www/html/cms/controllers/PageController.php:31
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(633): class_exists('app\\controllers...')
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(591): yii\base\Module->createControllerByID('page')
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('listproducts')
+#5 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#6 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-10-06 07:07:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=page%2Fcatalog'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '43712'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts&id=1'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538809637.81
+    'REQUEST_TIME' => 1538809637
+]
+2018-10-06 07:07:42 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: view in /var/www/html/cms/views/page/listproducts.php:92
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(92): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/c...', 92, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(35): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-06 07:07:42 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=page%2Fcatalog'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '43716'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts&id=1'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538809662.205
+    'REQUEST_TIME' => 1538809662
+]
+2018-10-06 07:08:23 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '1' (T_LNUMBER) in /var/www/html/cms/controllers/PageController.php:29
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(633): class_exists('app\\controllers...')
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(591): yii\base\Module->createControllerByID('page')
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('listproducts')
+#5 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#6 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-10-06 07:08:23 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=page%2Fcatalog'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '43718'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts&id=1'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538809703.642
+    'REQUEST_TIME' => 1538809703
+]
+2018-10-06 07:09:19 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected ''1'' (T_CONSTANT_ENCAPSED_STRING) in /var/www/html/cms/views/page/listproducts.php:92
+Stack trace:
+#0 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#3 /var/www/html/cms/controllers/PageController.php(35): yii\base\Controller->render('listproducts', Array)
+#4 [internal function]: app\controllers\PageController->actionListproducts()
+#5 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-06 07:09:19 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=page%2Fcatalog'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '43722'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts&id=1'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538809759.805
+    'REQUEST_TIME' => 1538809759
+]
+2018-10-06 07:09:48 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: view in /var/www/html/cms/views/page/listproducts.php:92
+Stack trace:
+#0 /var/www/html/cms/views/page/listproducts.php(92): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/c...', 92, Array)
+#1 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/c...')
+#2 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cms/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\PageController))
+#4 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('listproducts', Array, Object(app\controllers\PageController))
+#5 /var/www/html/cms/controllers/PageController.php(35): yii\base\Controller->render('listproducts', Array)
+#6 [internal function]: app\controllers\PageController->actionListproducts()
+#7 /var/www/html/cms/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/cms/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cms/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('listproducts', Array)
+#10 /var/www/html/cms/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('page/listproduc...', Array)
+#11 /var/www/html/cms/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-06 07:09:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/listproducts'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ln÷Z\'è: BeJ8±˘<â˝Òì©\'[±ÙJß—Ä7É\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/index.php?r=page%2Fcatalog'
+    'HTTP_COOKIE' => '_csrf=2b0962d8f6abdb666c9508966eabdff45eb7b912cac78a561f774391d54255fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ln%D6Z%27%8F%3A+BeJ8%B1%F9%3C%89%13%F0%FD%F1%93%A9%27%5B%B1%F4J%A7%D1%807%83%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '43726'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page%2Flistproducts&id=1'
+    'REQUEST_URI' => '/index.php?r=page%2Flistproducts&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538809788.07
+    'REQUEST_TIME' => 1538809788
+]
